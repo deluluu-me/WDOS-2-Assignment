@@ -143,7 +143,7 @@ footer a:hover {
     object-fit: cover;
 }
 
-.services-content h1 {
+.services-content h2 {
     font-size: 28px;
     color: #1e1e1e;
     text-align: center;
@@ -198,7 +198,7 @@ footer a:hover {
     margin-bottom: 15px;
 }
 
-.service-container h2 {
+.service-container h3 {
     background-color: #355764;
     color: #fff;
     padding: 10px;
