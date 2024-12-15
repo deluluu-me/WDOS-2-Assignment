@@ -126,8 +126,10 @@ footer a:hover {
 }
 
 /* Styles for about us page */
-.about-us-page {
-    background-color: #e0e0e0;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
 }
 
 .About-section {

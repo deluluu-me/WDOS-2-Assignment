@@ -262,9 +262,8 @@ h2 {
 }
 
 /* Order Table*/
-.order-summary h3 {
-    text-align: center;
-    font-size: 35px;
+.order-summary h2 {
+    font-size: 30px;
     color: #333;
     margin-bottom: 20px;
 }
