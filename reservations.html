@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hospitals, Kiwzie">
+    <meta name="description" content="Channel doctors through Kiwzie and book your appoinments with ease.">
+    <link rel="icon" href="images/KIWZE.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/reservations.css">
+    <title>Kiwzie Hospital - reservations</title>
+</head>
+    
+<body>
+   
+    <header class="header2">
+        <nav class="nav-bar">
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="images/KiwzieLogo.webp" alt="logo">
+            </div>
+    
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="checkout.html">cart</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <section class="reserve">
+            <h1>Ready to Register?</h1>
+            <div class = "reserve-container">
+                <div class="reserve-form">
+                    <form action="reservations.html">
+                        <fieldset class="reserve-fieldset">
+                            <div class="name">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="name" required><br>
+                                <br>
+                            </div>
+                            <div class="Specializations">
+                                <label for="drop1">Specialization:</label>
+                                <select name="frequency" id="drop1">
+                                    <option value="option.1">Cardiology</option>
+                                    <option value="option.2">Orthopedics</option>
+                                    <option value="option.3">Neurology</option>
+                                    <option value="option.4">Oncology</option>
+                                    <option value="option.5">Pediatrics</option>
+                                    <option value="option.6">Gastroenterology</option>
+                                    <option value="option.7">Urology</option>
+                                    <option value="option.8">Dermatology</option>
+                                    <option value="option.9">Endocrinology</option>
+                                </select><br>
+                                <br>
+                            </div>
+
+                            <div class="doctors-dropdown">
+                                <label for="drop2">Doctor:</label>
+                                <select name="frequency" id="drop1">
+                                    <option value="option.1">Dr. Nimal Perera (Cardiologist)</option>
+                                    <option value="option.2">Dr. Anusha Fernando (Orthopedic Surgeon)</option>
+                                    <option value="option.3">Dr. Kanishka Silva (Neurologist)</option>
+                                    <option value="option.4">Dr. Ruwani Jayasinghe (Oncologist)</option>
+                                    <option value="option.5">Dr. Shanika Rajapaksha (Pediatrician)</option>
+                                    <option value="option.6">Dr. Dilantha Samarasinghe (Gastroenterologist)</option>
+                                    <option value="option.7">Dr. Amali Wijesinghe (Gynecologist & Obstetrician)</option>
+                                    <option value="option.8">Dr. Lasith Karunaratne (Urologist)</option>
+                                    <option value="option.9">Dr. Nishantha Weerasinghe (Dermatologist)</option>
+                                </select><br>
+                                <br>
+                            </div>
+                            <div class="branch-dropdown">
+                                <label for="drop3">Branch :</label>
+                                <select name="frequency" id="drop1">
+                                    <option value="option.1">Dehiwala Branch</option>
+                                    <option value="option.2">Negombo Branch</option>
+                                    <option value="option.3">Wattala Branch</option>
+                                </select><br>
+                                <br>
+                            </div>
+                            <div class="date-field">
+                                <label for="dob">Date:</label>
+                                <input type="date" name="dob" id="dob" required><br>
+                                <br>
+                            </div>
+                            <div class="time-field">
+                                <label for="time">Time:</label>
+                                <input type="time" name="time" id="time" required><br>
+                                <br>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <img src="images/tube.webp"  alt="reservation image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kiwzie Hospital. All rights reserved. Follow us on 
+            <a href="https://www.facebook.com/KiwzieHospital" target="_blank">Facebook</a>, 
+            <a href="https://twitter.com/KiwzieHospital" target="_blank">Twitter</a>, or 
+            <a href="https://instagram.com/KiwzieHospital" target="_blank">Instagram</a>.
+        </p>
+    </footer>
+</body>
+</html>

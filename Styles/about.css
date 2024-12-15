@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* styles for header and nav bar */
+.header2 {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    background-color: #355764;
+    z-index: 99;
+}
+
+/* Logo styles*/
+.logo img {
+    width: 200px;
+    height: 62px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left: 60px;
+}
+
+.nav-menu li a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #d3d5d7;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-menu li a:hover {
+    background-color: #003840; 
+    color: #ffffff;
+}
+
+/* Media Query for navigation */
+
+@media screen and (max-width: 320px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 0;
+        position: static;
+        width: 100%;
+        background-color: #355764;
+        z-index: 1000;
+    }
+
+    .logo img {
+        margin-top: 0px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .nav-menu li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 5px;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-bar {
+        height: auto;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+}
+
+/* Footer styling */
+footer {
+    background-color: #355764;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #d3d5d7;
+}
+
+footer a {
+    color: #a89b6e;
+    font-size: 17px; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #cccccc; 
+    text-decoration: underline;
+}
+
+/* Media Query for footer */
+@media (max-width: 320px) {
+    footer p {
+        font-size: 1px; 
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+}
+
+/* Styles for about us page */
+.about-us-page {
+    background-color: #e0e0e0;
+}
+
+.About-section {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+.About-section h1 {
+    font-size: 30px; 
+    color: #333;
+}
+
+
+.About-section p {
+
+    font-size: 20px;
+    color: #3a3a3a;
+}
+
+.aboutus-strip img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 900px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 20px;
+}
+
+.field {
+    background-color: #e0e0e0;
+    padding: 15px; 
+    margin: 15px 0;
+    border-radius: 5px;
+    width: 90%;
+    height: 50px;
+}
+
+.branches {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.branch-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    height : auto;
+    border-radius: 10px;
+    background-color: #507f85;
+    overflow: hidden;
+}
+
+.branch-content:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.branch-content img {
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.branch-content h3 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1.3px;
+    margin: 10px;
+    font-size: 25px;
+    color: #000;
+    font-weight: 400;
+}
+
+.branch-content p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    margin: 10px;
+    letter-spacing: 1.3px;
+}
+
+.branch-content iframe {
+    height: 150px;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.summary-table {
+    padding: 20px 100px 40px 100px;
+}
+
+.summary-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 1.4px;
+}
+
+.summary-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.summary-table thead {
+    background-color: #507f85;
+}
+
+.summary-table th, .summary-table td {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.summary-table th {
+    color: #fff;
+    background-color: #3b6368;
+    letter-spacing: 1.3px;
+}
+
+.summary-table tfoot td{
+    background-color: #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media queries for about us page */
+@media (max-width: 320px) {
+
+    .About-section {
+        height: auto;
+    }
+
+    .About-section h1 {
+        font-size: 20px; 
+        color: #507f85;
+    }
+    
+    .About-section p {
+        font-size: 16px;
+        color: #3a3a3a;
+    }
+
+    .aboutus-strip {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutus-strip img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .aboutus-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .branches {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .branch-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: #507f85;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .branch-content img, .branch-content iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .branch-content h3 {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .branch-content p {
+        padding: 0px 40px;
+        font-size: 12px;
+        color: #fff;
+    }
+        
+    .summary-table {
+        padding: 10px;
+    }
+
+    .summary-table h2 {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 10px;
+        color: #507f85;
+    }
+    
+    .summary-table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .summary-table thead {
+        display: none;
+    }
+    
+    .summary-table tbody tr {
+        display: block;
+        border: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+
+    .summary-table td {
+        background-color: #b0b0b0;
+        color: #3a3a3a;
+        display: block;
+        text-align: left;
+        padding-left: 10px;
+        border: none;
+        position: relative;
+    }
+    
+    .summary-table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        width: 140px;
+        display: flex;
+        text-align: left;
+        padding-right: 10px;
+        color: #000;
+        box-sizing: border-box;
+    }
+    
+    .summary-table tfoot td {
+        text-align: center;
+        border: none;
+        background-color: #789194;
+        padding: 10px;
+    
+    }
+}

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* styles for header and nav bar */
+.header2 {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    background-color: #355764;
+    z-index: 99;
+}
+
+/* Logo styles*/
+.logo img {
+    width: 200px;
+    height: 62px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left: 60px;
+}
+
+.nav-menu li a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #d3d5d7;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-menu li a:hover {
+    background-color: #003840; 
+    color: #ffffff;
+}
+
+/* Media Query for navigation */
+
+@media screen and (max-width: 320px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 0;
+        position: static;
+        width: 100%;
+        background-color: #355764;
+        z-index: 1000;
+    }
+
+    .logo img {
+        margin-top: 0px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .nav-menu li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 5px;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-bar {
+        height: auto;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    main {
+        margin-top: 0px; /* Adjust this value based on the nav height */
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #355764;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #d3d5d7;
+}
+
+footer a {
+    color: #a89b6e;
+    font-size: 17px; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #cccccc; 
+    text-decoration: underline;
+}
+
+/* Media Query for footer */
+@media (max-width: 320px) {
+    footer p {
+        font-size: 1px; 
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+}
+
+/* Styles for Services page */
+.services-main {
+    background-color: #e0e0e0;
+}
+.services-main main {
+    padding: 20px;
+}
+
+.services-content img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.services-content h1 {
+    font-size: 28px;
+    color: #1e1e1e;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.services-content p {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 80%;
+}
+
+.doctors-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.doctors-button a {
+    padding: 10px 20px;
+    background-color: #355764;
+    text-decoration: none;
+    color: #fefefe;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.doctors-button a:hover {
+    background-color: #3a3a3a;
+}
+
+.services-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.service-container {
+    width: 22%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-container img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.service-container h2 {
+    background-color: #355764;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    letter-spacing: 1.3px;
+}
+
+.service-container p {
+    font-size: 17px;
+    line-height: 23px;
+}
+
+
+/* Responsive media query for services */
+@media (max-width: 768px) {
+    .services-content h2 {
+        font-size: 22px;
+    }
+    .services-content p {
+        max-width: 100%;
+    }
+    .services-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-content h2 {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .services-content p {
+        padding: 0 20px;
+    }
+
+    .service-container h4 {
+        font-size: 16px;
+    }
+
+    .service-container p {
+        font-size: 12px;
+    }
+
+    .doctors-button a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

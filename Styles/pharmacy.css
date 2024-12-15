@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* styles for header and nav bar */
+.header2 {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    background-color: #355764;
+    z-index: 99;
+}
+
+/* Logo styles*/
+.logo img {
+    width: 200px;
+    height: 62px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding-left: 60px;
+}
+
+.nav-menu li a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #d3d5d7;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav-menu li a:hover {
+    background-color: #003840; 
+    color: #ffffff;
+}
+
+/* Media Query for navigation */
+
+@media screen and (max-width: 320px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 0;
+        position: static;
+        width: 100%;
+        background-color: #355764;
+        z-index: 1000;
+    }
+
+    .logo img {
+        margin-top: 0px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .nav-menu li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 5px;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-bar {
+        height: auto;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+}
+/* Footer styling */
+footer {
+    background-color: #355764;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #d3d5d7;
+}
+
+footer a {
+    color: #a89b6e;
+    font-size: 17px; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #cccccc; 
+    text-decoration: underline;
+}
+
+/* Media Query for footer */
+@media (max-width: 320px) {
+    footer p {
+        font-size: 1px; 
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+}
+
+/* styles for pharmacy page */
+.medicines {
+    background-color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.medicine {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medicine:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Medicine image styling */
+.medicine img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Medicine name and details */
+.medicine h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.medicine p {
+    font-size: 15px;
+    color: #333;
+}
+
+/* Adjusting button appearance */
+.medicine button {
+    background-color:#3e6f72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.medicine button:hover {
+    background-color:  #507f85;
+}
+
+/* Styling the quantity input */
+.medicine input[type="number"] {
+    padding: 5px;
+    margin-top: 10px;
+    width: 60px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Category styling */
+h2 {
+    font-size: 1.5rem;
+    margin: 20px 50px;
+    text-align: left;
+    color: #333;
+}
+
+.categories {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: large;
+    letter-spacing: 1.3px;
+}
+
+.category {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: large;
+    letter-spacing: 1.3px;
+    margin: 20px 40px;
+    text-align: center;
+    color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Cart Section Styling */
+.cart-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensures responsive grid */
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+/* Individual cart item styling */
+.order-summary {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    text-align: center;
+}
+
+/* Order Table*/
+.order-summary h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+.order-summary table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.order-summary table, .order-summary th, .order-summary td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.order-summary th {
+    background-color: #507f85;
+    color: white;
+}
+
+.order-summary td {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.order-summary .total {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.action-buttons button {
+    background-color: #3e6f72;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: #a89b6e;
+    color: #333;
+}
+
+
+/* Mobile responsive styles */
+@media screen and (max-width: 320px) {
+    .medicines {
+        padding: 10px 0px;
+        width: auto;
+        align-content: center;
+    }
+
+    .category {
+        padding: 10px 0px;
+        width: 280px;
+        background-color: #e0e0e0;
+        margin: 20px;
+    }
+
+    .medicine img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .medicine h3 {
+        font-size: 1rem;
+    }
+
+    .medicine p {
+        font-size: 0.85rem;
+    }
+
+    .medicine button {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .order-summary {
+        padding: 10px 0px;
+        width: 280px;
+        margin: 20px;
+    }
+
+    .order-summary h2 {
+        font-size: 20px;
+        text-align: center;
+        color: #507f85;
+    }
+
+    .order-summary p {
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+    }
+
+    .order-summary table, .order-summary th, .order-summary td {
+        font-size: 0.8rem;
+    }
+
+    .order-summary table {
+        width: 90%;
+    }
+
+    .order-summary th {
+        background-color: #507f85;
+        color: white;
+    }
+
+    .order-summary td {
+        color: #333;
+        background-color: #f9f9f9;
+    }
+
+    .order-summary .quantity {
+        font-size: 1.2rem; 
+    }
+
+    .order-summary .price {
+        font-size: 1.2rem; 
+    }
+
+    .order-summary .total {
+        font-size: 1.2rem; 
+    }
+
+    .order-summary th, .order-summary td {
+        font-size: 0.9rem; 
+    }
+
+    .action-buttons{
+        flex-direction: column;
+        margin: 10px;
+        gap: 10px;
+    }
+
+}
+

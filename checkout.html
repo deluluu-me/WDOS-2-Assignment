@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hospitals, Kiwzie">
+    <meta name="description" content="Channel doctors through Kiwzie and book your appointments with ease.">
+    <link rel="stylesheet" href="Styles/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/KIWZE.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Checkout - Kiwzie Hospital</title>
+</head>
+<body>
+    <header class="header2">
+        <nav class="nav-bar">
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="images/KiwzieLogo.webp" alt="logo">
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="checkout.html">cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="cart-summary">
+            <h1>Your Cart</h1>
+            <div class="table-responsive">
+                <table id="checkoutTable">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Cart items will be added here -->
+                    </tbody>
+                </table>
+            </div>
+            <h2>Total: $<span id="checkoutTotal">0.00</span></h2>
+        </section>
+        <!-- Personal Details Section -->
+        <section class="personal-details">
+            <h3>Personal Details</h3>
+            <form id="personal-details-form" onsubmit="return validateForm()">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </form>
+        </section>
+
+        <!-- Delivery Information Section -->
+        <section class="Delivery-Payment">
+            <div class="delivery-info">
+                <h3>Delivery Information</h3>
+                <form id="delivery-details-form" onsubmit="return validateForm()">
+                    <label for="delivery-date">Preferred Delivery Date:</label>
+                    <input type="date" id="delivery-date" name="delivery-date" required>
+
+                    <label for="delivery-time">Preferred Delivery Time:</label>
+                    <input type="time" id="delivery-time" name="delivery-time" required>
+                </form>
+            </div>
+
+            <!-- Payment Details Section -->
+            <div class="payment-info">
+                <h3>Payment Details</h3>
+                <form id="payment-details-form" onsubmit="return validateForm()">
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="cod">Cash on Delivery</option>
+                        <option value="card">Credit/Debit Card</option>
+                    </select>
+
+                    <div id="card-details" style="display:none;">
+                        <label for="card-name">Name on Card:</label>
+                        <input type="text" id="card-name" name="card-name">
+
+                        <label for="card-number">Card Number:</label>
+                        <input type="text" id="card-number" name="card-number">
+
+                        <label for="expiry">Expiry Date:</label>
+                        <input type="month" id="expiry" name="expiry">
+
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Single Action Button -->
+        <button id="placeOrderBtn">Place Order</button>
+    </main>
+</body>
+
+    <footer>
+        <p>&copy; 2024 Kiwzie Hospital. All rights reserved. Follow us on 
+            <a href="https://www.facebook.com/KiwzieHospital" target="_blank">Facebook</a>, 
+            <a href="https://twitter.com/KiwzieHospital" target="_blank">Twitter</a>, or 
+            <a href="https://instagram.com/KiwzieHospital" target="_blank">Instagram</a>.
+        </p>
+    </footer>
+
+    <script src="scripts/checkout.js" defer></script>
+</body>
+</html>

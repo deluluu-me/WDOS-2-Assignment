@@ -1,0 +1,40 @@
+{
+    "analgesics": [
+        { "id": 1, "name": "Paracetamol", "description": "Pain reliever and fever reducer", "price": 5, "image": "images/analgesics1.webp" },
+        { "id": 2, "name": "Ibuprofen", "description": "Nonsteroidal anti-inflammatory drug", "price": 12, "image": "images/analgesics2.webp" },
+        { "id": 3, "name": "Aspirin", "description": "Used for pain relief, fever, and inflammation", "price": 8, "image": "images/analgesics3.webp" },
+        { "id": 4, "name": "Diclofenac", "description": "Used for treating inflammation and pain", "price": 15, "image": "images/analgesics4.webp" },
+        { "id": 5, "name": "Tramadol", "description": "Used to treat moderate to severe pain", "price": 20, "image": "images/analgesics5.webp" },
+        { "id": 6, "name": "Naproxen", "description": "Used for pain relief and anti-inflammation", "price": 18, "image": "images/analgesics6.webp" }
+    ],
+    "antibiotics": [
+        { "id": 7, "name": "Amoxicillin", "description": "Antibiotic used to treat bacterial infections", "price": 10, "image": "images/antibiotics1.webp" },
+        { "id": 8, "name": "Azithromycin", "description": "Used to treat respiratory and skin infections", "price": 13, "image": "images/antibiotics2.webp" },
+        { "id": 9, "name": "Ciprofloxacin", "description": "Broad-spectrum antibiotic for infections", "price": 15, "image": "images/antibiotics3.webp" },
+        { "id": 10, "name": "Doxycycline", "description": "Used for bacterial infections", "price": 21, "image": "images/antibiotics4.webp" },
+        { "id": 11, "name": "Metronidazole", "description": "Treats bacterial and parasitic infections", "price": 14, "image": "images/antibiotics5.webp" },
+        { "id": 12, "name": "Clindamycin", "description": "Used for treating serious infections", "price": 17, "image": "images/antibiotics6.webp" }
+    ],
+    "antidepressants": [
+        { "id": 13, "name": "Sertraline", "description": "Used to treat depression and anxiety", "price": 27, "image": "images/antidepressants1.webp" },
+        { "id": 14, "name": "Fluoxetine", "description": "Used to treat depression, anxiety, and OCD", "price": 25, "image": "images/antidepressants2.webp" },
+        { "id": 15, "name": "Escitalopram", "description": "Used for depression and anxiety", "price": 30, "image": "images/antidepressants3.webp" },
+        { "id": 16, "name": "Bupropion", "description": "Used for depression and smoking cessation", "price": 28, "image": "images/antidepressants4.webp" },
+        { "id": 17, "name": "Venlafaxine", "description": "Treats depression and anxiety disorders", "price": 32, "image": "images/antidepressants5.webp" },
+        { "id": 18, "name": "Duloxetine", "description": "Used for depression and chronic pain", "price": 29, "image": "images/antidepressants6.webp" }
+    ],
+    "antihistamines": [
+        { "id": 19, "name": "Cetirizine", "description": "Relieves allergy symptoms", "price": 7, "image": "images/antihistamines1.webp" },
+        { "id": 20, "name": "Loratadine", "description": "Used to treat allergy symptoms", "price": 9, "image": "images/antihistamines2.webp" },
+        { "id": 21, "name": "Fexofenadine", "description": "Relieves seasonal allergy symptoms", "price": 11, "image": "images/antihistamines3.webp" },
+        { "id": 22, "name": "Diphenhydramine", "description": "Used for treating allergies and cold symptoms", "price": 6, "image": "images/antihistamines4.webp" }
+    ],
+    "antihypertensives": [
+        { "id": 23, "name": "Lisinopril", "description": "Used to manage high blood pressure", "price": 17, "image": "images/antihypertensives1.webp" },
+        { "id": 24, "name": "Amlodipine", "description": "Treats high blood pressure and chest pain", "price": 28, "image": "images/antihypertensives2.webp" },
+        { "id": 25, "name": "Losartan", "description": "Used to treat high blood pressure", "price": 26, "image": "images/antihypertensives3.webp" },
+        { "id": 26, "name": "Metoprolol", "description": "Used for high blood pressure and heart conditions", "price": 22, "image": "images/antihypertensives4.webp" },
+        { "id": 27, "name": "Hydrochlorothiazide", "description": "Diuretic for blood pressure management", "price": 14, "image": "images/antihypertensives5.webp" },
+        { "id": 28, "name": "Enalapril", "description": "Used to manage hypertension and heart failure", "price": 20, "image": "images/antihypertensives6.webp" }
+    ]
+}
