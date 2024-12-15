@@ -90,9 +90,10 @@
                 <form id="payment-details-form" onsubmit="return validateForm()">
                     <label for="payment-method">Payment Method:</label>
                     <select id="payment-method" name="payment-method" required>
+                        <option value="" disabled selected>Select a payment method</option>
                         <option value="cod">Cash on Delivery</option>
                         <option value="card">Credit/Debit Card</option>
-                    </select>
+                    </select>                        
 
                     <div id="card-details" style="display:none;">
                         <label for="card-name">Name on Card:</label>
@@ -114,7 +115,6 @@
         <!-- Single Action Button -->
         <button id="placeOrderBtn">Place Order</button>
     </main>
-</body>
 
     <footer>
         <p>&copy; 2024 Kiwzie Hospital. All rights reserved. Follow us on 
